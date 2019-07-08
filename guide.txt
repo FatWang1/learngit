@@ -18,4 +18,10 @@ look for the changes:
 	git diff
 look for change logs:
 	git log(can +"--pretty=oneline"in the end to simply the output)
-	
+back to the lastest version:
+	git reset --hard HEAD^
+back to the which version:
+	git reset --hard (commit id at last 5 of head number)
+look for commit id history:
+	git reflog
+
