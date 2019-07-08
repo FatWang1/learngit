@@ -24,4 +24,5 @@ back to the which version:
 	git reset --hard (commit id at last 5 of head number)
 look for commit id history:
 	git reflog
-
+back to the lastest git commit(or add):
+	git checkout -- file_name
