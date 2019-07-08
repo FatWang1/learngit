@@ -1,0 +1,21 @@
+install:
+	sudo apt-get install git
+	./config
+	make
+	sudo make install
+make a git repository:
+	mkdir dir_name
+	cd dir_name
+init git repository:
+	git init
+add file:
+	touch file_name(and input content)
+	git add file_name(can add lots of files,use space as sign)
+	git commit -m "what did you do"
+look for the status:
+	git status
+look for the changes:
+	git diff
+look for change logs:
+	git log(can +"--pretty=oneline"in the end to simply the output)
+	
