@@ -54,7 +54,11 @@ mix other branch to this branch:
 	git merge branch_name
 remove branch:
 	git branch -d branch_name
-
-
+mix other branch to this branch(without fast forward):
+	git merge --no-ff -m "merge with no-ff" branch_name
+look for branch`s history:
+	git log --graph --pretty=oneline --abbrev-commit
+store workplace:
+	git stash
 
 
