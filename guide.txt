@@ -28,7 +28,10 @@ back to the lastest git commit(or add):
 	git checkout -- file_name
 remove file:
 	git rm file_name
-	git commit -m "remove test.txt"
+	git commit -m "remove file_name"
+remove dir:
+	git rm -r dir_name
+	git commit -m "remove dir_name"
 renew the file(had been removed):
 	git checkout -- file_name
 link git-net-server:
@@ -49,12 +52,25 @@ creat a new branch and move to this branch:
 list all branches:
 	git branch
 switch branch:
-	git check branch_name
+	git checkout branch_name
 mix other branch to this branch:
 	git merge branch_name
 remove branch:
 	git branch -d branch_name
-
-
-
+mix other branch to this branch(without fast forward):
+	git merge --no-ff -m "merge with no-ff" branch_name
+look for branch`s history:
+	git log --graph --pretty=oneline --abbrev-commit
+store workplace:
+	git stash
+look for workplace:
+	git stash list
+go on the workplace:
+	git stash pop
+	OR
+	git stash apply(back to previous workplace)
+	+
+	git stash drop(remove stash)
+remove a bransh which never be mixed:
+	git branch -D branch_name
 
